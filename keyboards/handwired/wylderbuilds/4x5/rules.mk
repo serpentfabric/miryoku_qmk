@@ -2,7 +2,7 @@
 MCU = RP2040
 BOOTLOADER = rp2040
 SERIAL_DRIVER = vendor
-F_CPU = 8000000 
+F_CPU = 8000000
 SPLIT_KEYBOARD = yes
 
 # Drivers for components
