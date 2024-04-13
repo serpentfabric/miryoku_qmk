@@ -5,3 +5,24 @@
 
 #pragma once
 
+// https://github.com/manna-harbour/miryoku/discussions/85
+// #define MIRYOKU_LAYER_LIST \
+// MIRYOKU_X(BASE,   "Base") \
+// MIRYOKU_X(EXTRA,  "Extra") \
+// MIRYOKU_X(TAP,    "Tap") \
+// MIRYOKU_X(BUTTON, "Button") \
+// MIRYOKU_X(NAV,    "Nav") \
+// MIRYOKU_X(MOUSE,  "Mouse") \
+// MIRYOKU_X(MEDIA,  "Media") \
+// MIRYOKU_X(NUM,    "Num") \
+// MIRYOKU_X(SYM,    "Sym") \
+// MIRYOKU_X(FUN,    "Fun") \
+// MIRYOKU_X(PRSNL,  "Personal")
+
+
+// add dynamic tapping term keys to media layer since qmk disables bluetooth
+#define MIRYOKU_LAYER_MEDIA \
+TD(U_TD_BOOT),     TD(U_TD_U_TAP),    TD(U_TD_U_EXTRA),  TD(U_TD_U_BASE),   U_NA,              RGB_TOG,           RGB_MOD,           RGB_HUI,           RGB_SAI,           RGB_VAI,           \
+KC_LGUI,           KC_LALT,           KC_LCTL,           KC_LSFT,           U_NA,              U_NU,              KC_MPRV,           KC_VOLD,           KC_VOLU,           KC_MNXT,           \
+U_NA,              KC_ALGR,           TD(U_TD_U_FUN),    TD(U_TD_U_MEDIA),  U_NA,              OU_AUTO,           DT_DOWN,          DT_PRINT,             DT_UP,              U_NU,              \
+U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              KC_MSTP,           KC_MPLY,           KC_MUTE,              U_NP,              U_NP
