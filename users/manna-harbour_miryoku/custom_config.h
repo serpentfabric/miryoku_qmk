@@ -5,12 +5,16 @@
 
 #pragma once
 #ifdef TAPPING_TERM
-#undef TAPPING_TERM 
+#undef TAPPING_TERM
 #endif
 #define TAPPING_TERM 220
 
 #ifndef PERMISSIVE_HOLD
 #define PERMISSIVE_HOLD
+#endif
+
+#ifndef TAPPING_FORCE_HOLD
+#define TAPPING_FORCE_HOLD
 #endif
 
 // add dynamic tapping term keys to media layer since qmk disables bluetooth
