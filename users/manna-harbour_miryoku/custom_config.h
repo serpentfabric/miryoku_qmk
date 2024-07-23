@@ -7,8 +7,11 @@
 #ifdef TAPPING_TERM
 #undef TAPPING_TERM 
 #endif
-#define TAPPING_TERM 150
+#define TAPPING_TERM 220
 
+#ifndef PERMISSIVE_HOLD
+#define PERMISSIVE_HOLD
+#endif
 
 // add dynamic tapping term keys to media layer since qmk disables bluetooth
 #define MIRYOKU_LAYER_MEDIA \
