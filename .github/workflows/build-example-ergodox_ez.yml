@@ -8,4 +8,4 @@ jobs:
   build:
     uses: ./.github/workflows/main.yml
     with:
-      keyboard: '["ergodox_ez"]'
+      keyboard: '["handwired/wylderbuilds/4x5"]'
