@@ -10,7 +10,7 @@
 #define SERIAL_USART_RX_PIN GP17
 #define SERIAL_PIO_USE_PIO0
 #define SERIAL_DEBUG
-#define SERIAL_USART_TIMEOUT 3000  // USART driver timeout. default 100
+#define SERIAL_USART_TIMEOUT 200  // USART driver timeout. default 100
 //#define SERIAL_USART_SPEED 921600
 #define SELECT_SOFT_SERIAL_SPEED 2
 //#define SERIAL_USART_PIN_SWAP
